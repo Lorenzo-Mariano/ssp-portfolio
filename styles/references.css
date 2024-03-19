@@ -1,0 +1,26 @@
+main {
+	max-width: 625px;
+	margin: 0 auto;
+}
+
+h1 {
+	margin-bottom: 2rem;
+}
+
+.contacts-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+
+	gap: 1.25rem;
+	padding: 1rem;
+	background-color: #fff;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5em;
+}

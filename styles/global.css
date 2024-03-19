@@ -10,18 +10,26 @@
 body {
 	display: flex;
 	flex-direction: column;
+
+	background-color: #ffffff;
+	opacity: 1;
+	background-image: radial-gradient(#cccccc 1.7000000000000002px, #ffffff 1.7000000000000002px);
+	background-size: 34px 34px;
 }
 
 nav {
 	display: flex;
+	justify-content: center;
 	gap: 0.5rem;
 
-	width: max-content;
-	margin: 0 auto;
+	margin: 0.75rem auto;
+	padding: 0.75rem;
 
-	padding: 0.5rem;
 	margin-bottom: 1.5rem;
-	border-bottom: 1px solid black;
+	background-color: #fff;
+
+	box-shadow: #54595e33 0px 8px 24px;
+	border-radius: 1rem;
 }
 
 .gradient {
@@ -34,7 +42,7 @@ nav {
 }
 
 .shadow {
-	box-shadow: #959da533 0px 8px 24px;
+	box-shadow: #666d7233 0px 8px 24px;
 }
 
 a {
