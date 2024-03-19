@@ -7,15 +7,20 @@
 	font-family: "Barlow", sans-serif;
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+}
+
 nav {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-
 	gap: 0.5rem;
+
+	width: max-content;
+	margin: 0 auto;
+
 	padding: 0.5rem;
 	margin-bottom: 1.5rem;
-
 	border-bottom: 1px solid black;
 }
 
@@ -28,6 +33,10 @@ nav {
 	background-clip: clip;
 }
 
+.shadow {
+	box-shadow: #959da533 0px 8px 24px;
+}
+
 a {
 	all: unset;
 	cursor: pointer;
@@ -35,4 +44,16 @@ a {
 
 a:hover {
 	font-weight: bold;
+
+	background: #833AB4;
+	background: linear-gradient(to right, #833AB4 0%, #F41C1C 50%, #B97B24 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: clip;
+}
+
+@media screen and (max-width: 625px) {
+	.shadow {
+		box-shadow: none;
+	}
 }

@@ -1,17 +1,8 @@
-body {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	height: 100vh;
-}
-
 .profile-wrapper {
 	max-width: 625px;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	margin: 0 auto;
 
 	border-radius: 1rem;
-	margin: 0 1rem;
 	padding: 1.5rem;
 }
 
@@ -21,7 +12,6 @@ body {
 
 	max-width: fit-content;
 	margin: 0 auto;
-
 	padding-bottom: 1rem;
 }
 
@@ -46,4 +36,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
+}
+
+@media screen and (max-width: 625px) {
+	.shadow {
+		box-shadow: none;
+	}
 }
