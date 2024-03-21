@@ -28,8 +28,13 @@ nav {
 	margin-bottom: 1.5rem;
 	background-color: #fff;
 
-	box-shadow: #54595e33 0px 8px 24px;
+	box-shadow: #2c2f3133 0px 8px 24px;
 	border-radius: 1rem;
+}
+
+nav:hover {
+	transform: scale(1.05);
+	transition: all 100ms ease-in-out;
 }
 
 .gradient {
@@ -42,7 +47,7 @@ nav {
 }
 
 .shadow {
-	box-shadow: #666d7233 0px 8px 24px;
+	box-shadow: #2c2f3133 0px 8px 24px;
 }
 
 a {
