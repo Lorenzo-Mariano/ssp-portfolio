@@ -1,72 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 
-	font-family: "Barlow", sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	background-color: #ffffff;
-	opacity: 1;
-	background-image: radial-gradient(#cccccc 1.7000000000000002px, #ffffff 1.7000000000000002px);
-	background-size: 34px 34px;
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: radial-gradient(#cccccc 1.7000000000000002px, #ffffff 1.7000000000000002px);
+  background-size: 34px 34px;
 }
 
 nav {
-	display: flex;
-	justify-content: center;
-	gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
 
-	margin: 0.75rem auto;
-	padding: 0.75rem;
+  margin: 0.75rem auto;
+  padding: 0.75rem;
 
-	margin-bottom: 1.5rem;
-	background-color: #fff;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
 
-	box-shadow: #2c2f3133 0px 8px 24px;
-	border-radius: 1rem;
+  box-shadow: #2c2f3133 0px 8px 24px;
+  border-radius: 1rem;
 }
 
 nav:hover {
-	transform: scale(1.05);
-	transition: all 100ms ease-in-out;
+  transform: scale(1.05);
+  transition: all 100ms ease-in-out;
 }
 
 .gradient {
-	background: #833AB4;
-	background: linear-gradient(to right, #833AB4 0%, #F41C1C 50%, #B97B24 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: #833AB4;
+  background: linear-gradient(to right, #833AB4 0%, #F41C1C 50%, #B97B24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-	background-clip: clip;
+  background-clip: clip;
 }
 
 .shadow {
-	box-shadow: #2c2f3133 0px 8px 24px;
+  box-shadow: #2c2f3133 0px 8px 24px;
 }
 
 a {
-	all: unset;
-	cursor: pointer;
+  all: unset;
+  cursor: pointer;
 }
 
 a:hover {
-	font-weight: bold;
+  font-weight: bold;
 
-	background: #833AB4;
-	background: linear-gradient(to right, #833AB4 0%, #F41C1C 50%, #B97B24 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: clip;
+  background: #833AB4;
+  background: linear-gradient(to right, #833AB4 0%, #F41C1C 50%, #B97B24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: clip;
+}
+
+hr {
+  border-style: solid;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  background-color: #fff;
+
+  border-top: 1px dashed #000;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+footer .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 0.5rem;
 }
 
 @media screen and (max-width: 625px) {
-	.shadow {
-		box-shadow: none;
-	}
+  .shadow {
+    box-shadow: none;
+  }
 }

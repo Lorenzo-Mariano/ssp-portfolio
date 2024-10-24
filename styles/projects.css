@@ -1,4 +1,4 @@
-main {
+body {
   max-width: 900px;
   padding: 1rem;
   margin: 0 auto;
@@ -37,7 +37,7 @@ h1 {
   flex: 3;
 }
 
-img {
+.projects-wrapper img {
   height: 150px;
   width: 150px;
 
